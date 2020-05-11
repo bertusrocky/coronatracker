@@ -1,21 +1,89 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-  /* line-height: 1.6; */
-  font-size: 1.5rem;
+ background-color: #f4f6f8;
 }
 
+footer{
+  background-color: #3d484b;
+  padding-top: 20px;
+  /* padding-bottom: 5px; */
+  font-size: 1.1rem;
+}
+
+/* select element's width */
 #countries{
   max-width: 350px;
 }
 
+#lastUpdate{
+  font-size: 1rem;
+  color: #3d484b;
+  font-family: 'Roboto', sans-serif;
+}
 
-@media (min-width: 576px) { 
- 
+h1, h2, h3, h4 {
+  font-family: 'Anton', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+h2, h3{
+  font-size: 2.7rem;
+  letter-spacing: 1,5px;
+  font-weight: 300;
+}
+
+h4{
+  font-size: 1.8rem;
+}
+
+/* CARDS */
+
+.card-subtitle{
+  color: #3d484b;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.card-footer-orange{
+  background-color: rgba(255,165,0, 0.6);
+}
+
+.card-footer-red{
+  background-color: rgb(255,0,0, 0.6);
+}
+
+.card-footer-green{
+  background-color: rgba(0,128,0, 0.6);
+}
+
+.globalCard{
+  width: 11rem;
+  height: 11.5rem;
+}
+
+@media (max-width: 576px) { 
+ h1{
+   font-size: 2.6rem;
+ }
+ h3{
+   font-size: 2.2rem;
+ }
+ .globalCard{
+   width: 100%;
+   height: 10rem;
+ }
 }
